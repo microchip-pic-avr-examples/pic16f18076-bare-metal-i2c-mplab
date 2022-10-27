@@ -144,7 +144,7 @@ void MSSP_HostInit(void)
     SSP1ADD = 0x4F;                                                             
     
     // Clear the host interrupt flag
-    PIR3bits.SSP1IF = 0; 
+    PIR3bits.SSP1IF = 0; //!!!Changed from PIR1
     
     // Disable the host interrupt
     PIE3bits.SSP1IE = 0;
