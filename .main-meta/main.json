@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f18076-bare-metal-i2c-mplab",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Bare Metal I2C Drivers for the PIC16F18076 Family of MCUs",
         "projectName": "pic16f18076-bare-metal-i2c-mplab",
         "shortDescription": "This example contains a simplified, reference I2C driver for the PIC16F18076 family.",
         "ide": {
@@ -19,12 +19,8 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
-        },
-        "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC16F1xxxx_DFP",
+            "semverRange": "^1.14.187"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +32,14 @@
                 "versionRange": "*"
             }
         },
-        "author": "Nathaniel Thompson",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Microchip",
+        "peripherals": [
+            "MSSP"
+        ],
+        "keywords": [
+            "Bare Metal",
+            "I2C"
+        ],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",

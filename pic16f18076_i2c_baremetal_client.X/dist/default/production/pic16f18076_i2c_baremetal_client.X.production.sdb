@@ -1,0 +1,417 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18076 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\interrupts.c
+[v _initInterrupts initInterrupts `(v  1 e 1 0 ]
+"12
+[v _ISR ISR `II(v  1 e 1 0 ]
+"44 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"17 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_blockData.c
+[v __MSSP_StoreByte _MSSP_StoreByte `(v  1 e 1 0 ]
+"42
+[v __MSSP_RequestByte _MSSP_RequestByte `(uc  1 e 1 0 ]
+"59
+[v __onMSSPStop _onMSSPStop `(v  1 e 1 0 ]
+"76
+[v _setupReadBuffer setupReadBuffer `(v  1 e 1 0 ]
+"82
+[v _setupWriteBuffer setupWriteBuffer `(v  1 e 1 0 ]
+"39 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_client.c
+[v _initI2CPins initI2CPins `(v  1 e 1 0 ]
+"71
+[v _MSSP_ClientInit MSSP_ClientInit `(v  1 e 1 0 ]
+"113
+[v __MSSP_ProcessInterrupt _MSSP_ProcessInterrupt `(v  1 e 1 0 ]
+"185
+[v _assignMSSPByteWriteHandler assignMSSPByteWriteHandler `(v  1 e 1 0 ]
+"190
+[v _assignMSSPByteReadHandler assignMSSPByteReadHandler `(v  1 e 1 0 ]
+"195
+[v _assignMSSPStopHandler assignMSSPStopHandler `(v  1 e 1 0 ]
+[s S85 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"426 C:/Users/C65471/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.14.187/xc8\pic\include\proc\pic16f18076.h
+[u S90 . 1 `S85 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES90  1 e 1 @11 ]
+[s S166 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"873
+[u S175 . 1 `S166 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES175  1 e 1 @20 ]
+[s S98 . 1 `uc 1 CLC3IF 1 0 :1:0 
+`uc 1 CLC4IF 1 0 :1:1 
+`uc 1 TX1IF 1 0 :1:2 
+`uc 1 RC1IF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 SSP1IF 1 0 :1:6 
+`uc 1 BCL1IF 1 0 :1:7 
+]
+"1473
+[u S107 . 1 `S98 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES107  1 e 1 @143 ]
+[s S603 . 1 `uc 1 CLC3IE 1 0 :1:0 
+`uc 1 CLC4IE 1 0 :1:1 
+`uc 1 TX1IE 1 0 :1:2 
+`uc 1 RC1IE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 SSP1IE 1 0 :1:6 
+`uc 1 BCL1IE 1 0 :1:7 
+]
+"1737
+[u S612 . 1 `S603 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES612  1 e 1 @153 ]
+"10555
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @1676 ]
+"10575
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @1677 ]
+"10765
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @1679 ]
+[s S256 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"10874
+[s S265 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S270 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S275 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S280 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S291 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S300 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S306 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 I2C_START1 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S312 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ1 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS1 1 0 :1:5 
+]
+[s S318 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A1 1 0 :1:5 
+]
+[s S323 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA1 1 0 :1:5 
+]
+[s S328 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT1 1 0 :1:5 
+]
+[s S333 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S338 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS1 1 0 :1:5 
+]
+[u S343 . 1 `S256 1 . 1 0 `S265 1 . 1 0 `S270 1 . 1 0 `S275 1 . 1 0 `S280 1 . 1 0 `S285 1 . 1 0 `S291 1 . 1 0 `S300 1 . 1 0 `S306 1 . 1 0 `S312 1 . 1 0 `S318 1 . 1 0 `S323 1 . 1 0 `S328 1 . 1 0 `S333 1 . 1 0 `S338 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES343  1 e 1 @1679 ]
+"11129
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @1680 ]
+[s S447 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"11159
+[s S453 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S458 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S467 . 1 `S447 1 . 1 0 `S453 1 . 1 0 `S458 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES467  1 e 1 @1680 ]
+"11249
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @1681 ]
+[s S492 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"11296
+[s S501 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S504 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S511 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S520 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S527 . 1 `S492 1 . 1 0 `S501 1 . 1 0 `S504 1 . 1 0 `S511 1 . 1 0 `S520 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES527  1 e 1 @1681 ]
+"11436
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @1682 ]
+[s S569 . 1 `uc 1 DHEN 1 0 :1:0 
+`uc 1 AHEN 1 0 :1:1 
+`uc 1 SBCDE 1 0 :1:2 
+`uc 1 SDAHT 1 0 :1:3 
+`uc 1 BOEN 1 0 :1:4 
+`uc 1 SCIE 1 0 :1:5 
+`uc 1 PCIE 1 0 :1:6 
+`uc 1 ACKTIM 1 0 :1:7 
+]
+"11453
+[u S578 . 1 `S569 1 . 1 0 ]
+[v _SSP1CON3bits SSP1CON3bits `VES578  1 e 1 @1682 ]
+"17877
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @7583 ]
+"17897
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @7584 ]
+"19145
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @7751 ]
+"19203
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @7752 ]
+[s S187 . 1 `uc 1 ANSELC0 1 0 :1:0 
+`uc 1 ANSELC1 1 0 :1:1 
+`uc 1 ANSELC2 1 0 :1:2 
+`uc 1 ANSELC3 1 0 :1:3 
+`uc 1 ANSELC4 1 0 :1:4 
+`uc 1 ANSELC5 1 0 :1:5 
+`uc 1 ANSELC6 1 0 :1:6 
+`uc 1 ANSELC7 1 0 :1:7 
+]
+"20518
+[s S196 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+`uc 1 ANSC6 1 0 :1:6 
+`uc 1 ANSC7 1 0 :1:7 
+]
+[u S205 . 1 `S187 1 . 1 0 `S196 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES205  1 e 1 @7840 ]
+[s S227 . 1 `uc 1 ODCC0 1 0 :1:0 
+`uc 1 ODCC1 1 0 :1:1 
+`uc 1 ODCC2 1 0 :1:2 
+`uc 1 ODCC3 1 0 :1:3 
+`uc 1 ODCC4 1 0 :1:4 
+`uc 1 ODCC5 1 0 :1:5 
+`uc 1 ODCC6 1 0 :1:6 
+`uc 1 ODCC7 1 0 :1:7 
+]
+"20682
+[u S236 . 1 `S227 1 . 1 0 ]
+[v _ODCONCbits ODCONCbits `VES236  1 e 1 @7842 ]
+"6 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_blockData.c
+[v _isFirst isFirst `VEa  1 s 1 isFirst ]
+"7
+[v _wasRead wasRead `VEa  1 s 1 wasRead ]
+"9
+[v _i2c_index i2c_index `VEuc  1 s 1 i2c_index ]
+"11
+[v _writeBuffer writeBuffer `*.4VEuc  1 s 1 writeBuffer ]
+"12
+[v _writeBufferSize writeBufferSize `VEuc  1 s 1 writeBufferSize ]
+"14
+[v _readBuffer readBuffer `*.4VEuc  1 s 1 readBuffer ]
+"15
+[v _readBufferSize readBufferSize `VEuc  1 s 1 readBufferSize ]
+"32 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_client.c
+[v _temp temp `VEuc  1 s 1 temp ]
+"35
+[v _storeByte storeByte `*.37(v  1 s 2 storeByte ]
+"36
+[v _getByte getByte `*.37(uc  1 s 2 getByte ]
+"37
+[v _I2CStopHandler I2CStopHandler `*.37(v  1 s 2 I2CStopHandler ]
+"44 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"58
+[v main@buffer buffer `[8]uc  1 a 8 3 ]
+"55
+[v main@F7777 F7777 `[8]uc  1 s 8 F7777 ]
+"75
+} 0
+"82 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_blockData.c
+[v _setupWriteBuffer setupWriteBuffer `(v  1 e 1 0 ]
+{
+[v setupWriteBuffer@buffer buffer `*.4VEuc  1 a 1 wreg ]
+[v setupWriteBuffer@buffer buffer `*.4VEuc  1 a 1 wreg ]
+[v setupWriteBuffer@size size `uc  1 p 1 2 ]
+"84
+[v setupWriteBuffer@buffer buffer `*.4VEuc  1 a 1 0 ]
+"86
+} 0
+"76
+[v _setupReadBuffer setupReadBuffer `(v  1 e 1 0 ]
+{
+[v setupReadBuffer@buffer buffer `*.4VEuc  1 a 1 wreg ]
+[v setupReadBuffer@buffer buffer `*.4VEuc  1 a 1 wreg ]
+[v setupReadBuffer@size size `uc  1 p 1 2 ]
+"78
+[v setupReadBuffer@buffer buffer `*.4VEuc  1 a 1 0 ]
+"80
+} 0
+"6 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\interrupts.c
+[v _initInterrupts initInterrupts `(v  1 e 1 0 ]
+{
+"10
+} 0
+"39 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_client.c
+[v _initI2CPins initI2CPins `(v  1 e 1 0 ]
+{
+"69
+} 0
+"195
+[v _assignMSSPStopHandler assignMSSPStopHandler `(v  1 e 1 0 ]
+{
+[v assignMSSPStopHandler@stopHandler stopHandler `*.37(v  1 p 2 0 ]
+"198
+} 0
+"185
+[v _assignMSSPByteWriteHandler assignMSSPByteWriteHandler `(v  1 e 1 0 ]
+{
+[v assignMSSPByteWriteHandler@writeHandler writeHandler `*.37(v  1 p 2 0 ]
+"188
+} 0
+"190
+[v _assignMSSPByteReadHandler assignMSSPByteReadHandler `(v  1 e 1 0 ]
+{
+[v assignMSSPByteReadHandler@readHandler readHandler `*.37(uc  1 p 2 0 ]
+"193
+} 0
+"71
+[v _MSSP_ClientInit MSSP_ClientInit `(v  1 e 1 0 ]
+{
+[v MSSP_ClientInit@address address `uc  1 a 1 wreg ]
+[v MSSP_ClientInit@address address `uc  1 a 1 wreg ]
+"74
+[v MSSP_ClientInit@address address `uc  1 a 1 2 ]
+"111
+} 0
+"12 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\interrupts.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"19
+} 0
+"113 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_client.c
+[v __MSSP_ProcessInterrupt _MSSP_ProcessInterrupt `(v  1 e 1 0 ]
+{
+"183
+} 0
+"59 C:\MPLAB_Projects\pic16f18076_i2c_baremetal_client.X\mssp1_blockData.c
+[v __onMSSPStop _onMSSPStop `(v  1 e 1 0 ]
+{
+"74
+} 0
+"17
+[v __MSSP_StoreByte _MSSP_StoreByte `(v  1 e 1 0 ]
+{
+[v __MSSP_StoreByte@data data `uc  1 p 1 0 ]
+"40
+} 0
+"42
+[v __MSSP_RequestByte _MSSP_RequestByte `(uc  1 e 1 0 ]
+{
+"45
+[v __MSSP_RequestByte@data data `uc  1 a 1 1 ]
+"57
+} 0
