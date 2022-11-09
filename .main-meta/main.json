@@ -22,6 +22,10 @@
             "name": "PIC16F1xxxx_DFP",
             "semverRange": "^1.14.187"
         },
+        "configurator": {
+            "name": "N/A",
+            "semverRange": ""
+        },
         "device": {
             "metaDataVersion": "1.0.0",
             "category": "com.microchip.portal.contentRef",
